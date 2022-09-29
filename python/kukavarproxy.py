@@ -11,16 +11,16 @@ class KUKA(object):
 
 
     def send (self, var, val, msgID):
-    	"""
-        kukavarproxy message format is 
-        msg ID in HEX                       2 bytes
-        msg length in HEX                   2 bytes
-        read (0) or write (1)               1 byte
-        variable name length in HEX         2 bytes
-        variable name in ASCII              # bytes
-        variable value length in HEX        2 bytes
-        variable value in ASCII             # bytes
-        """
+    	# """
+        # kukavarproxy message format is 
+        # msg ID in HEX                       2 bytes
+        # msg length in HEX                   2 bytes
+        # read (0) or write (1)               1 byte
+        # variable name length in HEX         2 bytes
+        # variable name in ASCII              # bytes
+        # variable value length in HEX        2 bytes
+        # variable value in ASCII             # bytes
+        # """
         try:
             msg = bytearray()
             temp = bytearray()
